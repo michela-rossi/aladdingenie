@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+	
+	<style>
+		html {scroll-behavior: smooth;}
+		</style>
+		
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title>Genie</title>
+			<!-- Libreria Bootstrap-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+			<!-- Libreria de normalizacion de css / soporte full en todos los navegadores-->
+		<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+		<link rel="stylesheet" type="text/css" href="estilos.css" />
+		<script language="JavaScript" type="text/JavaScript" src="java.js"></script>
+		
+	</head>
+	<body>
+<header>
+
+	<div class="col-lg-2 col-md-4 col-sm-4 col-4 logo">
+		<a href="index.html">
+			<img class="imglogo" src="img/lampada.png">
+		</a>
+	</div>
+
+
+	<div class="container">
+
+		<nav class="navbar" id="navID">
+			<button type="button" onclick="myFnc(this)" class="toggle-collapse" id="toggle-button">
+				<span class="toggle-icon"></span>
+			</button>
+
+			<ul class="side-nav">
+					<li class="nav-item">
+						<a href="#" onclick="location.href = 'index.html'" class="nav-link">Home</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#" onclick="location.href = 'personality.html'" class="nav-link">About me</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" onclick="location.href = 'powers.html'" class="nav-link">Powers & abilities</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#" onclick="location.href = 'films.html'" class="nav-link">Appearances</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" onclick="location.href = 'liveaction.html'" class="nav-link">Live action</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" onclick="location.href = 'lsinger.html'" class="nav-link">Songs</a>
+					</li>
+				
+					<li class="nav-item">
+						<a href="#" onclick="location.href = 'curriculum.html'" class="nav-link">Curriculum</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#" onclick="location.href = 'contatti.html'" class="nav-link">Contacts</a>
+					</li>
+
+			</ul>
+
+		</nav>		
+	</div>
+
+	
+	
+
+
+
+</header>
+
+<a class="menuleft" href="#" onclick="location.href = 'contatti.html'" class="nav-link">
+	rub the lamp
+</a>
+
+<div class="container-fluid fondoblu">
+
+ <div class="container-fluid inizio ">
+	<p class="titolinonero1 text-left"> I’m here to</p>
+	<h1 class="titolo1 text-center"> grant your wishes</h1>
+	<p class="titolinonero2 text-right"> don’t waste them!</p>
+  </div>
+
+ 
+  <div class="container-fluid parte2" >
+	<p class="titolinonero3 text-center col-11 col-sm-11 col-md-8 col-lg-8 mx-auto "> I can help you with all your whishes</p>
+<div class="row d-flex flex-nowrap rotazione text-center">
+	<h2 class="desideri1 "> become a prince • be rich • be famous • </h2>
+	</div>
+<div class="row d-flex flex-nowrap rotazione">
+		<h2 class="desideri2 "> fly • reach the moon • be handsome • </h2>
+
+</div>
+</div>
+<div class="container-fluid parte2">
+	<p class="titolinobianco1 text-center mx-auto col-11 col-sm-11 col-md-8 col-lg-8"> I’m the ever impressive, the long contained, 
+		often imitated, but never duplicated … </p>
+	<div class="p3sfondo">
+		<div class="genielamp ml-5">
+	<h1 class="titolo3">Genie </h1>
+	<h1 class="titolo3">of the lamp</h1>
+</div>
+	</div>	
+ </div>
+
+ <div class="container-fluid text-center parte2" >
+	<p class="titolinonero3 text-center mx-auto"> Always available</p>
+	<p class="titolinobianco2 text-center mx-auto col-11 col-sm-11 col-md-8 col-lg-8"> Need help from a powerful genie?
+		Let’s discuss your needs</p>
+	<a class="btn btn-primary bottone" href="#" onclick="location.href = 'contatti.html'" role="button">rub the lamp</a>
+</div>
+
+<footer class="container-fluid text-left footer">
+		<p class="footertext"> © Michela Rossi_Producción digital II_Universidad de Palermo_2020</p>
+</footer>
+
+</div>
+    
+
+				
+	<script> 
+	function myFnc(e){
+		e.classList.toggle("show");
+		var elem=document.getElementById("navID"),
+		Style = window.getComputedStyle(elem),
+		right = Style.getPropertyValue("right");
+
+		if(right == "0px"){
+			elem.style.right = "-80vw";
+		} else {
+			elem.style.right = "0px";
+		}
+	}
+	</script>
+	<!-- Libreria Bootstrap JS-->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	</body>
+</html>

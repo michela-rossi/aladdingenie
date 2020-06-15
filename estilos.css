@@ -1,0 +1,1014 @@
+@import url("https://use.typekit.net/zen6sll.css");
+
+@keyframes slide-right {
+	from {
+	  margin-left: -100%;
+	  width: 300%; 
+	}
+  	to {
+	  margin-left: 0%;
+	  width: 100%;
+	}
+  }
+
+  @keyframes sottolineare {
+	0%{width: 10%;}
+	100%{width: 100%;}
+}
+
+.navbar {
+	position: fixed;
+	right: -80vw;
+	width: 80vw;
+	height: 100vh;
+	background-color: white;
+	text-align: left;
+	transition: 0.800s ease;
+	z-index: 1;
+}
+
+.navbar > .side-nav {
+	list-style-type: none;
+	padding: 0;
+	margin: auto;
+}
+
+.nav-item{
+	display: flex;
+}
+
+.nav-item > .nav-link {
+	text-decoration: none;
+	color: black;
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 1.5em;
+	padding: 0em;
+	flex: 1;
+}
+
+.nav-item > .nav-link:hover {
+	background-color:#feeb01;
+	color: black;
+}
+
+.toggle-collapse {
+	float: left;
+	margin-left: -4.7em ;
+	margin-top: -20em;
+	content: "";
+	outline: inherit;
+	border: 0px;
+	background: transparent;
+	position: fixed;
+}
+
+button:focus {
+    outline: 0px dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+}
+
+/* toggle icon */
+
+.toggle-icon,
+.toggle-icon::before,
+.toggle-icon::after {
+	content: "";
+	width: 40px;
+	height: 4px;
+	position: fixed;
+	background-color: black;
+	border-radius: 2em;
+	border: 1px solid black;
+	cursor: pointer;
+	transition: 0.800s ease;
+	margin-top: 0.8em;
+}
+
+.toggle-icon::before{
+	position: absolute;
+	left: -1px;
+	margin-top: -0.8em;
+}
+
+.toggle-icon::after{
+	position: absolute;
+	left: -1px;
+	margin-top: 0.6em;
+	width: 40px;
+}
+
+.toggle-icon {
+	width: 40px;
+	height: 4px;
+	filter: drop-shadow(4px 4px 0 #feeb01);
+}
+
+.show .toggle-icon::after {
+	width: 20px;
+}
+
+.show .toggle-icon {
+	width: 30px;
+}
+
+
+/*111pagine*/
+
+.logo{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	padding-left: 2%;
+	padding-top: 2%;
+	display: inline-block;
+	
+}
+.menuleft {
+	font-size: 1em;
+	color: black;
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	transform: rotate(90deg);
+	position: fixed;
+	margin-top: 50vh;
+    margin-left: 94%;
+	white-space: nowrap;
+	
+}
+
+.menuleft::after {
+	content: "";
+    display: block!important;
+    margin-top: -11px;
+    height: 7px;
+    width: 100%;
+	background-color: #feeb01;
+	animation: sottolineare 0.7s linear;
+	animation-fill-mode: both;
+}
+
+a:hover {
+	text-decoration: none;
+	color:#463fdb ;
+}
+.fondoblu{
+	background-color: #463fdb;
+	margin-left: 0;
+	width: 95vw;
+	padding: 0;
+	margin: 0;
+}
+
+.inizio{
+	height: 100vh;
+	background-image: url(img/testa.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50vh;
+}
+
+.titolinonero1{
+	font-size: 2em;
+	color: black;
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	padding-top: 20%;
+	margin-bottom: 0;
+	padding-left: 5%;
+	display: inline-block;
+}
+
+.titolinonero1::after {
+	content: "";
+    display: block!important;
+    margin-top: -20px;
+    height: 14px;
+    width: 100%;
+	background-color: #feeb01;
+	animation: sottolineare 0.7s linear;
+	animation-fill-mode: both;
+}
+.titolinonero2{
+	font-size: 2em;
+	color: black;
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	padding-right: 5%;
+	float: right;
+}
+.titolinonero2::after {
+	content: "";
+    display: block!important;
+    margin-top: -20px;
+    height: 14px;
+    width: 100%;
+	background-color: #feeb01;
+	animation: sottolineare 0.7s linear 0.2s;
+	animation-fill-mode: both;
+}
+
+.titolinonero3{
+	font-size: 1.5em;
+	color: black;
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	padding-top: 20%;
+}
+
+
+.titolo1{
+	font-size: 6.5em;
+	color: white;
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	margin: 0;
+}
+
+.desideri1{
+	font-size: 8em;
+	color: white;
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	margin: 0;
+	padding-top: 10%;
+	padding-right: 2vw;
+	white-space: nowrap;
+	color: transparent;
+    -webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #feeb01;
+	animation: slide-right 5s linear infinite;
+}
+
+.desideri2{
+	font-size: 8em;
+	color:  #feeb01;
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	margin: 0;
+	padding-bottom: 5%;
+	padding-right: 2vw;
+	white-space: nowrap;
+	animation: slide-right 8s linear infinite;
+}
+.rotazione {
+	transform: rotate(-5deg);
+	padding: 0;
+	margin: 0;
+}
+
+.parte2 {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.titolinobianco1{
+	font-size: 2.5em;
+	color: white;
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	padding-top: 20%;
+	margin: auto;
+}
+
+.p3sfondo{
+	height: 100vh;
+	background-image: url(img/genio.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+	padding: 0;
+	margin: 0;
+}
+
+.titolo3{
+	font-size: 10vw;
+	color:  #feeb01;
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	margin: 0;
+	padding-top: 0%;
+	padding-bottom: 0%;
+	padding-left: 5%;
+	float: left;
+    clear: left;
+}
+
+.titolo3::after {
+	content: "";
+    display: block!important;
+    margin-top: -54px;
+    height: 41px;
+    width: 100%;
+	background-color: black;
+}
+
+.titolo3:hover::after{
+	animation: sottolineare 0.7s linear;
+	animation-fill-mode: both;
+}
+
+.genielamp {
+	padding-top: 30%;
+}
+
+.titolinobianco2{
+	font-size: 2.5em;
+	color: white;
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	padding-top: 2%;
+	margin: auto;
+}
+
+.bottone {
+	background-color: #feeb01;
+	border-color: black;
+	color: black;
+	font-size: 1em;
+	font-family: montserrat, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	text-transform: uppercase;
+	border: solid 3px;
+	margin-top: 3%;
+	margin-bottom: 15%;
+}
+
+.footer {
+	background-color: black;
+	padding-top: 1%;
+	padding-bottom: 0.2%;
+	margin: 0;
+}
+
+.footertext {
+	font-size: 1em;
+	font-family: montserrat, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	color: white;
+}
+
+/*Pagina Personality*/
+
+
+.fondobianco{
+	margin-left: 0;
+	width: 95vw;
+	padding: 0;
+	margin: 0;
+}
+
+.titolonero{
+	font-size: 6vw;
+	color: black;
+	font-family: montserrat, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	margin: 0;
+	padding-left: 0;
+}
+
+
+.titolinoalto{
+	font-size: 1.5em;
+	color: black;
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	padding-top: 20%;
+	margin-bottom: 0;
+	margin: 0;
+	padding-left: 1%;
+	display: inline-block;
+}
+
+.titolinoalto::after {
+	content: "";
+    display: block!important;
+    margin-top: -14px;
+    height: 9px;
+    width: 100%;
+	background-color: #feeb01;
+	animation: sottolineare 0.7s linear;
+	animation-fill-mode: both;
+}
+
+.titolinoalto2{
+	font-size: 1.5em;
+	color: black;
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	padding-top: 20%;
+	margin-bottom: 0;
+	margin: 0;
+	padding-left: 1%;
+	display: inline-block;
+}
+
+.titolinoalto2::after {
+	content: "";
+    display: block!important;
+    margin-top: -14px;
+    height: 9px;
+    width: 100%;
+	background-color: white;
+	animation: sottolineare 0.7s linear;
+	animation-fill-mode: both;
+}
+
+.testobase{
+	font-size: 1em;
+	color: black;
+	font-family: montserrat, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	text-align: justify;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.immagini {
+	padding-bottom: 5%;
+}
+
+.calltoaction {
+	font-size: 1.5em;
+	color: black;
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	padding-top: 0%;
+}
+
+.imgpersonality {
+	padding-bottom: 10%;
+}
+
+.imgpersonality:hover {
+	transform: scale(1.2);
+}
+/*Pagina Powers*/
+
+
+.fondogiallo{
+	background-color: #feeb01;
+	margin-left: 0;
+	width: 95%;
+	padding: 0;
+	margin: 0;
+}
+
+.poteri {
+	font-size: 3.5em;
+	color: #463fdb;
+	font-family: montserrat, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	margin: 0;
+	padding-left: 0;
+	display: inline-block;
+}
+
+.poteri::after {
+	content: "";
+    display: block!important;
+    margin-top: -25px;
+    height: 25px;
+    width: 100%;
+	background-color: white;
+}
+
+.poteri:hover::after{
+	animation: sottolineare 0.7s linear;
+	animation-fill-mode: both;
+}
+
+.titolinopoteri{
+	font-size: 1.5em;
+	color: black;
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	padding-top: 60%;
+	margin-bottom: 0;
+	margin: 0;
+	padding-left: 15%;
+	
+}
+
+.testopoteri{
+	font-size: 1em;
+	color: black;
+	font-family: montserrat, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	text-align: justify;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 15%;
+}
+
+.domanda {
+	margin: auto;
+	padding-top: 10%;
+}
+
+.immaginigialle {
+	padding-bottom: 0%;
+	height: 100%;
+}
+
+.immaginigialle2 {
+	padding-bottom: 0%;
+	height: 100%;
+	flex-direction: row-reverse
+}
+
+.animazioniblu {
+	background-image: url("img/fumo.png");
+	position: absolute;
+	width: 100%;
+}
+
+/*Pagina Remake*/
+
+.coverremake {
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.video {
+	padding-bottom: 5%;
+	width: 100%;
+}
+
+.titolovideo {
+	color:#463fdb;
+	font-size: 1.5em;
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	text-transform: uppercase;
+	padding-top: 10%;
+}
+
+/*Pagina film*/
+
+.titolofilm {
+	color: #feeb01;
+	font-size: 1em;
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	text-transform: uppercase;
+	padding-top: 10%;
+	padding-bottom: 0;
+}
+
+.imgfilm {
+	filter: drop-shadow(12px 12px 0 #feeb01);
+}
+
+.imgfilm2 {
+	filter: drop-shadow(12px 12px 0 #463fdb);
+}
+/*Pagina contatti*/
+
+.sfondocontatti {
+background-image: url("img/Sorriso03.png");
+background-size: contain;
+background-repeat: no-repeat;
+background-position: right;
+height: 100vh;
+
+}
+
+.titolocontatti {
+	font-size: 3.5em;
+	color: white;
+	font-family: montserrat, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+/*Media Queries*/
+/*
+
+/*Dispositivos Grandes - Large*/
+@media screen and (max-width:1200px) and (min-width:769px){
+
+}
+
+
+/*Dispositivos Medianos*/
+@media screen and (max-width:768px) and (min-width:577px) {
+	.imglogo{
+		width: 50%;
+	}
+	.menuleft {
+		display: none;		
+	}
+	
+.fondoblu{
+		background-color: #463fdb;
+		margin-left: 0;
+		width: 100vw;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.inizio{
+		height: 80vh;
+		background-image: url(img/testa.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+	
+	.titolinonero1{
+		font-size: 2em;
+		padding-top: 70%;
+	}
+	
+	.titolinonero1::after {
+		margin-top: -20px;
+		height: 13px;
+	}
+	.titolinonero2{
+		font-size: 2em;
+	float: right;
+	}
+	.titolinonero2::after {
+		margin-top: -20px;
+		height: 13px;
+	}
+	
+	.titolinonero3{
+		font-size: 1.5em;
+	}
+	
+	
+	.titolo1{
+		font-size: 4.5em;
+	}
+	
+	.desideri1{
+		font-size: 5.5em;		
+	}
+	
+	.desideri2{
+		font-size: 5.5em;
+	}
+	
+	
+	.titolinobianco1{
+		font-size: 2em;
+		padding-bottom: 0;
+	}
+	
+	.p3sfondo{
+		height: 50vh;
+	}
+	
+	.titolo3{
+		font-size: 12vw;
+	}
+	
+	.titolo3::after {
+		margin-top: -25px;
+		height: 25px;
+	}
+	
+	.genielamp {
+		padding-top: 40%;
+	}
+	
+	.titolinobianco2{
+		font-size: 2em;
+		padding-bottom: 10%;
+	}
+	.footertext {
+		font-size: 0.7em;
+		font-family: montserrat, sans-serif;
+		font-weight: 500;
+		font-style: normal;
+		color: white;
+	}
+
+/*powers*/
+
+
+.fondogiallo{
+	width: 100%;
+}
+
+.poteri {
+	font-size: 6vw;
+	margin-left: 30%;
+}
+
+.titolinopoteri{
+	font-size: 1.5em;
+	padding-top: 10%;
+	margin: auto;
+}
+
+.testopoteri{
+	font-size: 1em;
+	margin: auto;
+}
+
+.domanda {
+	margin: auto;
+	padding-top: 10%;
+}
+
+.immaginigialle {
+	height: 70%;
+	margin: auto;
+}
+
+.immaginigialle2 {
+	height: 70%;
+	justify-content: center;
+}
+/*Pagina Personality*/
+
+
+.fondobianco{
+	width: 100%;
+	overflow: auto;
+}
+
+.titolonero{
+	font-size: 8vw;
+	color: black;
+}
+
+.titolinoalto{
+	font-size: 1.3em;
+	padding-top: 30%;
+}
+
+.titolinoalto2{
+	font-size: 1.3em;
+	padding-top: 30%;
+}
+.testobase{
+	font-size: 0.9em;
+}
+
+.immagini {
+	padding-bottom: 5%;
+}
+
+.calltoaction {
+	font-size: 1em;
+}
+
+/*pagina remake*/
+
+.titolovideo {
+	font-size: 1em;
+}
+
+
+/*Pagina contatti*/
+
+.titolocontatti {
+		font-size: 6vw;
+	}
+
+}
+
+
+/*Disp. Pequeños*/
+@media screen and (max-width:576px) and (min-width:0px){
+
+
+	.imglogo{
+		width: 100%;
+		display: none;
+	}
+	.menuleft {
+		display: none;		
+	}
+	
+.fondoblu{
+		background-color: #463fdb;
+		margin-left: 0;
+		width: 100vw;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.inizio{
+		height: 80vh;
+		background-image: url(img/testa.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+	
+	.titolinonero1{
+		font-size: 1.5em;
+		padding-top: 100%;
+	}
+	
+	.titolinonero1::after {
+		margin-top: -20px;
+		height: 13px;
+	}
+	.titolinonero2{
+		font-size: 1.5em;
+	float: right;
+	}
+	.titolinonero2::after {
+		margin-top: -20px;
+		height: 13px;
+	}
+	
+	.titolinonero3{
+		font-size: 1.1em;
+	}
+	
+	
+	.titolo1{
+		font-size: 3.5em;
+	}
+	
+	.desideri1{
+		font-size: 5em;		
+	}
+	
+	.desideri2{
+		font-size: 5em;
+	}
+	
+	
+	.titolinobianco1{
+		font-size: 1.5em;
+		padding-bottom: 0;
+	}
+	
+	.p3sfondo{
+		height: 50vh;
+	}
+	
+	.titolo3{
+		font-size: 12vw;
+	}
+	
+	.titolo3::after {
+		margin-top: -25px;
+		height: 25px;
+	}
+	
+	.genielamp {
+		padding-top: 55%;
+	}
+	
+	.titolinobianco2{
+		font-size: 1.5em;
+		padding-bottom: 10%;
+	}
+	.footertext {
+		font-size: 0.7em;
+		font-family: montserrat, sans-serif;
+		font-weight: 500;
+		font-style: normal;
+		color: white;
+	}
+
+/*powers*/
+
+
+.fondogiallo{
+	width: 100%;
+}
+
+.poteri {
+	font-size: 13vw;
+	margin-left: 30%;
+}
+
+
+.titolinopoteri{
+	font-size: 1em;
+	padding-top: 10%;
+	margin: auto;
+}
+
+.testopoteri{
+	font-size: 0.9em;
+	margin: auto;
+}
+
+.domanda {
+	margin: auto;
+	padding-top: 30%;
+	padding-bottom: 10%;
+}
+
+.immaginigialle {
+	height: 70%;
+	justify-content: center;
+}
+
+.immaginigialle2 {
+	flex-direction: row;
+	height: 70%;
+	justify-content: center;
+}
+/*Pagina Personality*/
+
+
+.fondobianco{
+	width: 100%;
+	overflow: auto;
+}
+
+.titolonero{
+	font-size: 12vw;
+	color: black;
+}
+
+
+.titolinoalto{
+	font-size: 1em;
+	padding-top: 30%;
+}
+
+.titolinoalto::after {
+	margin-top: -10px;
+    height: 8px;
+}
+
+.titolinoalto2{
+	font-size: 1em;
+	padding-top: 30%;
+}
+
+.titolinoalto2::after {
+	margin-top: -11px;
+    height: 10px;
+}
+
+.testobase{
+	font-size: 0.9em;
+}
+
+.immagini {
+	padding-bottom: 5%;
+}
+
+.calltoaction {
+	font-size: 1em;
+}
+/*pagina remake*/
+
+.titolovideo {
+	font-size: 1em;
+}
+
+/*Pagina contatti*/
+
+.titolocontatti {
+	font-size: 8vw;
+}
+
+.nav-item > .nav-link {
+	font-size: 1em;
+}
+
+.toggle-collapse {
+    margin-top: -21em;
+    transform: scale(0.8);
+}
+
+.toggle-icon {
+	width: 40px;
+	height: 4px;
+	filter: drop-shadow(3px 3px 0 #feeb01);
+}
+
+
+}
+	

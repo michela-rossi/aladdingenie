@@ -1,0 +1,152 @@
+@import url("https://use.typekit.net/zen6sll.css");
+
+
+@keyframes occhi {
+	0%{background-position: 0;}
+	100% {background-position: -51845px;}
+}
+
+@keyframes occhi2 {
+	0%{transform: translate(0px,-350px) scale(0.6);}
+	33%{transform: translate(0px,-350px) scale(0.6);}
+	36% {transform: translate(400px,-200px) scale(0.4);}
+	67% {transform: translate(400px,-200px) scale(0.4);}
+	69%{transform: translate(-495px,-450px) scale(0.27);}
+	100%{transform: translate(-495px,-450px) scale(0.27);}
+}
+ 
+
+@keyframes occhipiccoli {
+	0%{transform: translate(0px,-150px) scale(0.6);}
+	33%{transform: translate(0px,-150px) scale(0.6);}
+	36% {transform: translate(200px,-200px) scale(0.4);}
+	67% {transform: translate(200px,-200px) scale(0.4);}
+	69%{transform: translate(-295px,-450px) scale(0.27);}
+	100%{transform: translate(-295px,-450px) scale(0.27);}
+}
+
+
+
+
+
+.background{
+	background-color: rgb(1, 5, 43);
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	height: 100vh;
+	
+	
+}
+.animaz {
+	width: 100vw;
+	overflow: hidden;
+}
+
+.titolo {
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: white;
+	font-size: 7em;
+	margin: 0px;
+	padding-top: 30px;
+	padding-left: 30px;
+	margin-left: 5%;
+	}
+
+.testo {
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: white;
+	font-size: 1.7em;
+	position: relative;
+	top: 365px;
+	padding-left: 30px;
+	width: 37%;
+	line-height:1.4em;
+}
+
+.occhi{
+	background-image: url("img/occhi.png");
+	background-repeat: no-repeat;
+	height: 1080px;
+	width: 1080px;
+	position: relative;
+	left:0%;
+	top: 0%;
+	transform: scale(0.55);
+	z-index: -1;
+		
+	
+}
+
+  .footer {
+	background-color: black;
+	width: 100%;
+}
+
+.footertext {
+	font-size: 1em;
+	font-family: montserrat, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	color: white;
+}
+
+.bottone {
+	background-color: #feeb01;
+	border-color: black;
+	color: black;
+	font-size: 1em;
+	font-family: montserrat, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	text-transform: uppercase;
+	border: solid 3px;
+	margin-top: 1%;
+	margin-bottom: 15%;
+	margin-left: 6%;
+}
+
+
+.titolinobianco2{
+	font-size: 2em;
+	color: white;
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	padding-top: 2%;
+	margin-left: 5%;
+}
+
+.scritte {
+	position: fixed;
+	bottom: 10px;
+}
+
+/*Media Queries*/
+/*
+
+/*Dispositivos Grandes - Large*/
+@media screen and (max-width:3000px) and (min-width:769px){
+	.occhi{
+			
+		animation: occhi 3s infinite steps(48), occhi2 9s linear infinite;
+	}
+}
+
+
+/*Dispositivos Medianos*/
+@media screen and (max-width:768px) and (min-width:577px) {
+}
+
+/*Disp. Pequeños*/
+@media screen and (max-width:576px) and (min-width:0px){
+
+	.occhi{
+			
+		animation: occhi 3s infinite steps(48), occhipiccoli 9s linear infinite;
+	}
+}
