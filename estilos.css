@@ -1,15 +1,10 @@
 @import url("https://use.typekit.net/zen6sll.css");
 
 @keyframes slide-right {
-	from {
-	  margin-left: -100%;
-	  width: 300%; 
-	}
-  	to {
-	  margin-left: 0%;
-	  width: 100%;
-	}
-  }
+	0%   { transform: translateX(-100%);}
+	100% { transform: translateX(0%); }
+   }
+
 
   @keyframes sottolineare {
 	0%{width: 10%;}
@@ -240,11 +235,9 @@ a:hover {
 	margin: 0;
 	padding-top: 10%;
 	padding-right: 2vw;
-	white-space: nowrap;
 	color: transparent;
     -webkit-text-stroke-width: 2px;
 	-webkit-text-stroke-color: #feeb01;
-	animation: slide-right 5s linear infinite;
 }
 
 .desideri2{
@@ -256,14 +249,30 @@ a:hover {
 	margin: 0;
 	padding-bottom: 5%;
 	padding-right: 2vw;
-	white-space: nowrap;
-	animation: slide-right 8s linear infinite;
 }
 .rotazione {
 	transform: rotate(-5deg);
 	padding: 0;
 	margin: 0;
 }
+
+.contenitore {
+	overflow: hidden;
+	white-space: nowrap;
+  }
+  
+.scrolling {
+	animation: slide-right 8s linear infinite;
+	display: inline-block;
+	padding-right: 10px;
+  }
+
+.scrolling2 {
+	animation: slide-right 5s linear infinite;
+	display: inline-block;
+	padding-right: 10px;
+  } 
+
 
 .parte2 {
 	padding: 0;
