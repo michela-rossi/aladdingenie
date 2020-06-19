@@ -262,13 +262,13 @@ a:hover {
   }
   
 .scrolling {
-	animation: slide-right 8s linear infinite;
+	animation: slide-right 10s linear infinite;
 	display: inline-block;
 	padding-right: 10px;
   }
 
 .scrolling2 {
-	animation: slide-right 5s linear infinite;
+	animation: slide-right 8s linear infinite;
 	display: inline-block;
 	padding-right: 10px;
   } 
