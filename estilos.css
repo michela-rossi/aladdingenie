@@ -601,11 +601,11 @@ a:hover {
 /*Pagina contatti*/
 
 .sfondocontatti {
-background-image: url("img/Sorriso03.png");
-background-size: contain;
-background-repeat: no-repeat;
-background-position: right;
-height: 100vh;
+	background-image: url("img/Sorriso03.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	height: 100vh;
 
 }
 
@@ -615,6 +615,66 @@ height: 100vh;
 	font-family: montserrat, sans-serif;
 	font-weight: 900;
 	font-style: normal;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.inner {
+	padding-left: 10%;
+}
+
+.form-group {
+    position: relative;
+    display: block;
+	margin-bottom: 10%;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 2px solid black;
+	display: block;
+	
+    width: 100%;
+    height: 45px;
+    font-size: 1em;
+    background: none;
+	font-family: montserrat, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.form-control:focus, .form-control:valid {
+	font-family: montserrat, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	border-bottom: 2px solid #fff;
+	background: none;
+	color: white;
+	box-shadow: none;
+}
+	
+	
+.form-control:focus + span, .form-control:valid + span {
+		transform: translateY(-22px) scale(0.8);
+		background: none;
+		color: #feeb01;
+	}
+
+.form-group span {
+	font-family: montserrat, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    font-size: 1em;
+    color: white;
+    position: absolute;
+    top: 11px;
+    transition: all .2s ease;
+    transform-origin: 0 0;
+    cursor: text;
 }
 
 /*Media Queries*/
