@@ -360,6 +360,7 @@ flex-wrap: wrap;}
 	font-size: 1.2em;
 	margin-left: 5%;
 	color: black;
+	font-weight: 900;
 	
 }
 
@@ -438,6 +439,7 @@ width: 100%;
 
 hr {
 	width: 70%;
+	color:black;
 	  }
 .immagine1, .immagine2, .immagine3, .immagine4, .immagine5, .immagine6 {
 	width: 85%;
@@ -512,6 +514,7 @@ hr {
 		font-size: 1em;
 		margin-left: 5%;
 		color: black;
+		font-weight: 900;
 		
 	}
 	
@@ -593,6 +596,7 @@ hr {
 	
 	hr {
 		width: 85%;
+		color: black;
 		  }
 
 .immagine1, .immagine2, .immagine3, .immagine4, .immagine5, .immagine6{
