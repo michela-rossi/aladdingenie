@@ -451,7 +451,7 @@ hr {
 		margin-top: 0;
 		margin-bottom: 0;
 		width: 90%;
-		background-color: white;
+		background-color: black;
 		border: none;
 		height: 1px;
 	}
@@ -613,7 +613,7 @@ hr {
 	margin-top: 0;
 	margin-bottom: 0;
 	width: 90%;
-	background-color: white;
+	background-color: black;
 	border: none;
 	height: 1px;
 } 
