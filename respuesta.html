@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+	
+	<style>
+		html {scroll-behavior: smooth;}
+		</style>
+		
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title>Powers</title>
+			<!-- Libreria Bootstrap-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+			<!-- Libreria de normalizacion de css / soporte full en todos los navegadores-->
+		<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+		<link rel="stylesheet" type="text/css" href="estilos.css" />
+		<script language="JavaScript" type="text/JavaScript" src="java.js"></script>
+		
+	</head>
+	<body>
+		<header>
+
+			<div class="col-lg-2 col-md-4 col-sm-4 col-4 logo">
+				<a href="index.html">
+					<img class="imglogo" src="img/lampada.png">
+				</a>
+			</div>
+		
+		</header>
+		
+		<a class="menuleft" href="#" onclick="location.href = 'contatti.html'" class="nav-link">
+			rub the lamp
+		</a>
+		
+
+
+<div class="container-fluid fondoblu respuesta">
+
+<div class="container-fluid col-10 col-md-8 col-sm-10 col-lg-6">
+	 <p class="titolinoalto text-left " > Message received </p>
+	 <h1 class="titolonero" style="color: white;"> Thank you for your message </h1>
+    <p class="testobase" style="color: white;"> An answer will appear soon in your mail box</p>
+
+
+
+
+
+	<a class="btn btn-primary mx-auto bottone" onclick="location.href = 'index.html'" href="#" role="button">GO back</a>
+</div>
+</div>
+
+
+<footer class="container-fluid text-left footer">
+		<p class="footertext"> © Michela Rossi_Producción digital II_Universidad de Palermo_2020</p>
+</footer>
+</div>
+
+
+				
+<script> 
+	function myFnc(e){
+		e.classList.toggle("show");
+		var elem=document.getElementById("navID"),
+		Style = window.getComputedStyle(elem),
+		right = Style.getPropertyValue("right");
+
+		if(right == "0px"){
+			elem.style.right = "-80vw";
+		} else {
+			elem.style.right = "0px";
+		}
+	}
+	</script>
+	<!-- Libreria Bootstrap JS-->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	</body>
+</html>
