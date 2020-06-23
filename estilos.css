@@ -675,6 +675,14 @@ a:hover {
     cursor: text;
 }
 
+
+.respuesta {
+	background-image: url(img/multiplo.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
 /*Media Queries*/
 /*
 
